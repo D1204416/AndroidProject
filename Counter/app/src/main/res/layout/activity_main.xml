@@ -40,8 +40,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
         android:layout_marginTop="392dp"
+        android:backgroundTint="#4CAF50"
         android:text="計數"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,8 +52,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="224dp"
         android:layout_marginTop="392dp"
+        android:backgroundTint="#EB1C1C"
         android:text="歸零"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
