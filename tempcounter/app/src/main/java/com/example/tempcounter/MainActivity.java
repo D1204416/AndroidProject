@@ -31,11 +31,23 @@ public class MainActivity extends AppCompatActivity {
         Button f = (Button) findViewById(R.id.f); // F 華氏按鈕
         EditText tempInput = (EditText) findViewById(R.id.tempInput); //數字輸入匡
 
-        int view = Integer.parseInt(tempView.getText().toString());
-        int view = Integer.parseInt(tempView.getText().toString());
+        int input = Integer.parseInt(tempInput.getText().toString());
+        int viewer = Integer.parseInt(tempView.getText().toString());
+
+        viewer = (input*9/5+32);
+        tempView.setText(String.valueOf(viewer));
     }
 
     public void fToC(View view){
 
+        TextView tempView = (TextView) findViewById(R.id.tempView); //顯示溫度
+        Button c = (Button) findViewById(R.id.c); // C 華氏按鈕
+        EditText tempInput = (EditText) findViewById(R.id.tempInput); //數字輸入匡
+
+        int input = Integer.parseInt(tempInput.getText().toString());
+        int viewer = Integer.parseInt(tempView.getText().toString());
+
+        viewer= ((input-32)*5/9);
+        tempView.setText(String.valueOf(viewer));
     }
 }
