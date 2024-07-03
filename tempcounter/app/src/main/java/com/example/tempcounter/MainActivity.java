@@ -1,6 +1,10 @@
 package com.example.tempcounter;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +24,18 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void cToF(View view){
+        TextView tempView = (TextView) findViewById(R.id.tempView);
+        Button f = (Button) findViewById(R.id.f);
+        EditText tempInput = (EditText) findViewById(R.id.tempInput);
+
+        int view = Integer.parseInt(tempView.getText().toString());
+        int view = Integer.parseInt(tempView.getText().toString());
+    }
+
+    public void fToC(View view){
+
     }
 }
