@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void cToF(View view){
-        TextView tempView = (TextView) findViewById(R.id.tempView);
-        Button f = (Button) findViewById(R.id.f);
-        EditText tempInput = (EditText) findViewById(R.id.tempInput);
+        TextView tempView = (TextView) findViewById(R.id.tempView); //顯示溫度
+        Button f = (Button) findViewById(R.id.f); // F 華氏按鈕
+        EditText tempInput = (EditText) findViewById(R.id.tempInput); //數字輸入匡
 
         int view = Integer.parseInt(tempView.getText().toString());
         int view = Integer.parseInt(tempView.getText().toString());

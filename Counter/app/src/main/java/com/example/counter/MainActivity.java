@@ -31,11 +31,11 @@ public class MainActivity extends AppCompatActivity {
     public void Count(View view){
 
         TextView timesText = (TextView)findViewById(R.id.times); // 次數
-        Button countButton = (Button) findViewById(R.id.count);
-        EditText limitEditView = (EditText) findViewById(R.id.limit);
+        Button countButton = (Button) findViewById(R.id.count); // 按鈕
+        EditText limitEditView = (EditText) findViewById(R.id.limit); // 輸入框
 
         int limit = Integer.parseInt(limitEditView.getText().toString());
-        int times = Integer.parseInt(limitEditView.getText().toString());
+        int times = Integer.parseInt(timesText.getText().toString());
 
         if (limit > times){
             times += 1;
