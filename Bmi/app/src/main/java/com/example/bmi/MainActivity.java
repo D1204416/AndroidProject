@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 }
-        )
+        );
     }
 
     public void GotoBMICalculate(View view){
