@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-
     }
 
     public void GotoNTDActivity (View view) {
@@ -31,9 +30,30 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void GotoExchangeActivity (View view) {
-        Intent intent = new Intent(this, ExchangeActivity.class);
-        startActivity(intent);
-    }
-    
+//    public void GotoExchangeActivity (View view) {
+//        Intent intent = new Intent(this, ExchangeActivity.class);
+//        startActivity(intent);
+//    }
+
+//    public void SentTitleName(View view){
+//
+//        // 1.按下按鈕Ａ,傳送Apple 2.按下按鈕Ｂ,傳送Banana
+//        String title;
+//        if(view.getId() == R.id.buttonA){
+//            title = "Apple";
+//        }else{
+//            title = "Banana";
+//        }
+//        Intent intent = new Intent(this,FruitActivity2.class);
+//
+//        // 設定一個bundle來放資料
+//        Bundle bundle = new Bundle();
+//        bundle.putString("FRUIT",fruit);
+//
+//        // 利用intent攜帶bundle資料
+//        intent.putExtras(bundle);
+//        startActivity(intent);
+//
+//    }
+
 }

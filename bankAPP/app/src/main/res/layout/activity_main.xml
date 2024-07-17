@@ -10,8 +10,8 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="415dp"
-        android:layout_height="709dp"
+        android:layout_width="364dp"
+        android:layout_height="669dp"
         android:gravity="center|top"
         android:orientation="vertical"
         android:padding="6dp"
@@ -68,7 +68,7 @@
                         android:paddingLeft="2dp"
                         android:text="NTD餘額："
                         android:textAlignment="viewEnd"
-                        android:textSize="25sp"
+                        android:textSize="24sp"
                         app:layout_constraintEnd_toEndOf="parent" />
 
                     <TextView
@@ -84,7 +84,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/jpy_Button"
+                    android:id="@+id/Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -148,7 +148,7 @@
                         android:paddingLeft="2dp"
                         android:text="USD餘額："
                         android:textAlignment="viewEnd"
-                        android:textSize="25sp"
+                        android:textSize="24sp"
                         app:layout_constraintEnd_toEndOf="parent" />
 
                     <TextView
@@ -164,7 +164,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/jpy_Button"
+                    android:id="@+id/Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -200,7 +200,7 @@
                     android:paddingLeft="2dp"
                     android:text="JPY餘額："
                     android:textAlignment="viewEnd"
-                    android:textSize="25sp"
+                    android:textSize="24sp"
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <TextView
@@ -216,7 +216,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/jpy_Button"
+                android:id="@+id/Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -240,7 +240,7 @@
             android:id="@+id/textView7"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:text="操作結果："
             android:textAlignment="textStart"
             android:textColor="#040404"
