@@ -1,6 +1,10 @@
 package com.example.bmi;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +24,20 @@ public class CalBMIActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void CalBMI(View view){
+        EditText et_weight = (EditText) findViewById(R.id.et_weight);
+        EditText et_height = (EditText) findViewById(R.id.et_height);
+
+
+        double w = Double.parseDouble(et_weight.getText().toString());
+        double h = Double.parseDouble(et_height.getText().toString());
+        double bmi = w/(h*h);
+
+        Intent intent = new Intent();
+        intent.putExtra("BMI",bmi); // 資料回傳main
+        setResult(Activity.RESULT_OK,intent);
+        finish();
     }
 }
