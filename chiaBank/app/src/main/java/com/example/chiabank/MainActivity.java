@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
                 new ActivityResultCallback<ActivityResult>() {
                     @Override
                     public void onActivityResult(ActivityResult result) {
+
+
                         // 寫另一個Activity回傳後,得到回傳的資料之後的做法
                         if (result.getData() != null && result.getResultCode() == Activity.RESULT_OK) {
                             amount = result.getData().getDoubleExtra("AMOUNT", 0);
@@ -89,8 +91,7 @@ public class MainActivity extends AppCompatActivity {
                                     }
                                 }
 
-                            }else {
-
+                            } else {
                                 double rate = result.getData().getDoubleExtra("RATE", 0);
                                 if (coin.equals("USD")) {
                                     TextView tv_usdbalance = (TextView) findViewById(R.id.usdbalance);
