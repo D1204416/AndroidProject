@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void callMap(View view){
         Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse("gel:0,0?q=tokyo disneyland"));
+        i.setData(Uri.parse("geo:0,0?q=tokyo disneyland"));
         startActivity(i);
     }
 
